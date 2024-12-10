@@ -1,0 +1,224 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual é o nome do dragão em 'O Hobbit'?",
+      "options": [
+        "Smaug",
+        "Ancalagon",
+        "Glaurung",
+        "Drogon"
+      ],
+      "correctAnswer": "Smaug"
+    },
+    {
+      "id": 2,
+      "question": "Quem foi o primeiro portador do Um Anel?",
+      "options": [
+        "Sauron",
+        "Isildur",
+        "Elrond",
+        "Gollum"
+      ],
+      "correctAnswer": "Sauron"
+    },
+    {
+      "id": 3,
+      "question": "Como Bilbo Bolsão encontrou o Um Anel?",
+      "options": [
+        "Caiu de Gollum durante o jogo de charadas",
+        "Foi presenteado por Gandalf",
+        "Encontrou em Bolsão",
+        "Comprou de um comerciante"
+      ],
+      "correctAnswer": "Caiu de Gollum durante o jogo de charadas"
+    },
+    {
+      "id": 4,
+      "question": "Quem destrói o Um Anel?",
+      "options": [
+        "Frodo",
+        "Sam",
+        "Gollum",
+        "Aragorn"
+      ],
+      "correctAnswer": "Gollum"
+    },
+    {
+      "id": 5,
+      "question": "Qual é o nome completo de Frodo?",
+      "options": [
+        "Frodo Tûk",
+        "Frodo Brandybuck",
+        "Frodo Bolsão",
+        "Frodo Gamgi"
+      ],
+      "correctAnswer": "Frodo Bolsão"
+    },
+    {
+      "id": 6,
+      "question": "Qual é a montanha onde o Um Anel foi destruído?",
+      "options": [
+        "Caradhras",
+        "Monte da Perdição",
+        "Montanhas Sombrias",
+        "Monte Gundabad"
+      ],
+      "correctAnswer": "Monte da Perdição"
+    },
+    {
+      "id": 7,
+      "question": "Quem é o pai de Legolas?",
+      "options": [
+        "Thranduil",
+        "Elrond",
+        "Celeborn",
+        "Galadriel"
+      ],
+      "correctAnswer": "Thranduil"
+    },
+    {
+      "id": 8,
+      "question": "Qual é o nome do cavalo de Gandalf?",
+      "options": [
+        "Asfaloth",
+        "Hasufel",
+        "Scadufax",
+        "Shadowmere"
+      ],
+      "correctAnswer": "Scadufax"
+    },
+    {
+      "id": 9,
+      "question": "Qual é o nome do anão que acompanha Bilbo em 'O Hobbit'?",
+      "options": [
+        "Gimli",
+        "Dáin",
+        "Thorin",
+        "Balin"
+      ],
+      "correctAnswer": "Thorin"
+    },
+    {
+      "id": 10,
+      "question": "O que significa a inscrição no Um Anel?",
+      "options": [
+        "Um Anel para a todos governar",
+        "Um Anel para trazer a luz",
+        "Um Anel para proteger os reis",
+        "Um Anel para guiar os perdidos"
+      ],
+      "correctAnswer": "Um Anel para a todos governar"
+    },
+    {
+      "id": 11,
+      "question": "Quem ajuda Frodo e Sam a entrar em Mordor?",
+      "options": [
+        "Gollum",
+        "Aragorn",
+        "Legolas",
+        "Gandalf"
+      ],
+      "correctAnswer": "Gollum"
+    },
+    {
+      "id": 12,
+      "question": "Quem é o governante de Lothlórien?",
+      "options": [
+        "Galadriel",
+        "Elrond",
+        "Celeborn",
+        "Thranduil"
+      ],
+      "correctAnswer": "Galadriel"
+    },
+    {
+      "id": 13,
+      "question": "O que Gandalf diz ao Balrog em Moria?",
+      "options": [
+        "Você não passará!",
+        "Volte para o abismo!",
+        "Eu sou o portador da luz!",
+        "Este é o meu destino!"
+      ],
+      "correctAnswer": "Você não passará!"
+    },
+    {
+      "id": 14,
+      "question": "Qual é o verdadeiro nome de Gollum?",
+      "options": [
+        "Smeagol",
+        "Deagol",
+        "Gríma",
+        "Saruman"
+      ],
+      "correctAnswer": "Smeagol"
+    },
+    {
+      "id": 15,
+      "question": "Qual é o nome da espada de Bilbo?",
+      "options": [
+        "Glamdring",
+        "Andúril",
+        "Ferroada",
+        "Orcrist"
+      ],
+      "correctAnswer": "Ferroada"
+    },
+    {
+      "id": 16,
+      "question": "O que o Anel causa em quem o usa por muito tempo?",
+      "options": [
+        "Invisibilidade permanente",
+        "Longevidade e corrupção",
+        "Poder ilimitado",
+        "Controle mental"
+      ],
+      "correctAnswer": "Longevidade e corrupção"
+    },
+    {
+      "id": 17,
+      "question": "Quem trai Saruman?",
+      "options": [
+        "Gríma Língua de Cobra",
+        "Denethor",
+        "Boromir",
+        "Théoden"
+      ],
+      "correctAnswer": "Gríma Língua de Cobra"
+    },
+    {
+      "id": 18,
+      "question": "Quem foi o primeiro Rei de Gondor?",
+      "options": [
+        "Isildur",
+        "Anárion",
+        "Aragorn",
+        "Elendil"
+      ],
+      "correctAnswer": "Elendil"
+    },
+    {
+      "id": 19,
+      "question": "Qual é o nome da espada de Aragorn?",
+      "options": [
+        "Narsil",
+        "Andúril",
+        "Glamdring",
+        "Orcrist"
+      ],
+      "correctAnswer": "Andúril"
+    },
+    {
+      "id": 20,
+      "question": "Quem ajuda Frodo a se recuperar em Valfenda?",
+      "options": [
+        "Elrond",
+        "Arwen",
+        "Galadriel",
+        "Legolas"
+      ],
+      "correctAnswer": "Elrond"
+    }
+  ]
+}
