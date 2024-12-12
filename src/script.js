@@ -50,3 +50,33 @@ const questions = [
     correctAnswer: 2,
   },
 ];
+
+//depois separa as funções, organiza direitinho, implementei so pra testar e pra mostrar como é caso tivessem dúvidas...
+function startGameOnClickAndHidenTheStartScreen() {
+  document.getElementById("start-button").onclick = function () {
+    var questionScreen = document.getElementById("question-screen");
+    var startScreen = document.getElementById("start-screen");
+
+    if (questionScreen.style.display === "none" || questionScreen.style.display === "") {
+      questionScreen.style.display = "block";
+      startScreen.style.display = "none"
+    } else {
+      questionScreen.style.display = "none"
+    }
+  }
+
+  //depois ajeita direitinho e apaga o comentario, fiz so pra mostrar caso tivessem duvidas
+ 
+    var comeBackButtonAndHidenTheQuestionScreen = document.getElementById("comeback-button").onclick = function () {
+      var questionScreen = document.getElementById("question-screen");
+      var startScreen = document.getElementById("start-screen");
+
+      if (startScreen.style.display === "none" || startScreen.style.display === "") {
+        startScreen.style.display = "block"
+        questionScreen.style.display = "none"
+
+      } 
+  }
+
+
+}
