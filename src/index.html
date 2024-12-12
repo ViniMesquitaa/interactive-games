@@ -3,37 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Quiz Interativo</title>
   </head>
   <body>
-    <main class="quiz-container">
-      <header>
-        <h1>Quiz Interativo</h1>
-      </header>
+    <main id="quiz-container">
+      <section id="start-screen">
+        <h1>Bem-vindo ao Quiz!</h1>
+        <button class="button" id="start-button">Iniciar Quiz</button>
+      </section>
 
-      <article id="question-container">
-        <h2 id="question">Qual é a capital do Brasil?</h2>
-        <section class="answer-options">
-          <button class="answer-btn" aria-label="Resposta: São Paulo">
-            São Paulo
-          </button>
-          <button class="answer-btn" aria-label="Resposta: Brasília">
-            Brasília
-          </button>
-          <button class="answer-btn" aria-label="Resposta: Rio de Janeiro">
-            Rio de Janeiro
-          </button>
-          <button class="answer-btn" aria-label="Resposta: Salvador">
-            Salvador
-          </button>
-        </section>
-      </article>
+      <section id="question-screen" class="hidden">
+        <h2 class="question" id="question"></h2>
+        <div id="score-container">Acertos: <span id="score">0</span></div>
+        <div class="options" id="options"></div>
+      </section>
 
-      <section id="feedback"></section>
-
-      <footer>
-        <p id="score">Pontuação: 0</p>
-      </footer>
+      <section id="game-over-screen" class="hidden">
+        <h1 id="game-over">Game Over!</h1>
+        <p>Você acertou <span id="final-score"></span> perguntas.</p>
+      </section>
     </main>
   </body>
 </html>
