@@ -51,32 +51,21 @@ const questions = [
   },
 ];
 
-//depois separa as funções, organiza direitinho, implementei so pra testar e pra mostrar como é caso tivessem dúvidas...
+const startScreen = document.getElementById("start-screen");
+const scoreElement = document.getElementById("score");
+const comebackButton = document.getElementById("comeback-button");
+const questionScreen = document.getElementById("question-screen");
+
+let score = 0;
+let shuffledQuestions = [];
+
 function startGameOnClickAndHidenTheStartScreen() {
-  document.getElementById("start-button").onclick = function () {
-    var questionScreen = document.getElementById("question-screen");
-    var startScreen = document.getElementById("start-screen");
+  shuffledQuestions = questions.sort(() => 0.5 - Math.random());
+  score = 0;
+  scoreElement.textContent = score;
 
-    if (questionScreen.style.display === "none" || questionScreen.style.display === "") {
-      questionScreen.style.display = "block";
-      startScreen.style.display = "none"
-    } else {
-      questionScreen.style.display = "none"
-    }
-  }
-
-  //depois ajeita direitinho e apaga o comentario, fiz so pra mostrar caso tivessem duvidas
- 
-    var comeBackButtonAndHidenTheQuestionScreen = document.getElementById("comeback-button").onclick = function () {
-      var questionScreen = document.getElementById("question-screen");
-      var startScreen = document.getElementById("start-screen");
-
-      if (startScreen.style.display === "none" || startScreen.style.display === "") {
-        startScreen.style.display = "block"
-        questionScreen.style.display = "none"
-
-      } 
-  }
-
-
+  startScreen.classList.add("hidden");
+  questionScreen.classList.remove("hidden");
+  showQuestion();
 }
+
