@@ -55,9 +55,12 @@ const startScreen = document.getElementById("start-screen");
 const scoreElement = document.getElementById("score");
 const comebackButton = document.getElementById("comeback-button");
 const questionScreen = document.getElementById("question-screen");
+const questionElement = document.getElementById("question");
+const optionsElements = document.getElementById("options");
 
 let score = 0;
 let shuffledQuestions = [];
+let questionIndex = 0;
 
 function startGameOnClickAndHidenTheStartScreen() {
   shuffledQuestions = questions.sort(() => 0.5 - Math.random());
@@ -69,3 +72,18 @@ function startGameOnClickAndHidenTheStartScreen() {
   showQuestion();
 }
 
+function showQuestion(){
+  const question = shuffledQuestions[questionIndex];
+  questionElement.textContent = question.question;
+  optionsElements.innerHTML = "";
+
+  question.options.forEach((option, index) => {
+    const button = document.createElement("button");
+    button.textContent = option;
+    button.classList.add("button");
+    
+    button.onclick = () => handleAnswer(index);
+    optionsElements.appendChild(button);
+    
+  });
+}
