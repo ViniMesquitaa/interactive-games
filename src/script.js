@@ -81,9 +81,36 @@ function showQuestion(){
     const button = document.createElement("button");
     button.textContent = option;
     button.classList.add("button");
-    
+
     button.onclick = () => handleAnswer(index);
     optionsElements.appendChild(button);
-    
+
   });
+}
+
+function handleAnswer(selectedOption) {
+  const question = shuffledQuestions[questionIndex];
+  const buttons = optionsElements.querySelectorAll("button");
+  buttons.forEach((button, index) => {
+    if (index === question.correctAnswer) {
+      button.classList.add("correct");
+    }
+  });
+
+  if (selectedOption === question.correctAnswer) {
+    score++;
+    scoreElement.textContent = score;
+    setTimeout(() => {
+      questionIndex++;
+      if (questionIndex < shuffledQuestions.length) {
+        showQuestion();
+      } else {
+        alert(`Parabéns! Você acertou todas!`);
+        location.reload();
+      }
+    }, 1500);
+  } else {
+    buttons[selectedOption].classList.add("wrong");
+    setTimeout(() => showGameOver(), 1500);
+  }
 }
