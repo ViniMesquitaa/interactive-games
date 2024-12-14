@@ -10,6 +10,11 @@ const questions = [
     correctAnswer: 0,
   },
   {
+    question: "Qual método é utilizado para remover o último item de um array em JavaScript?",
+    options: ["pop()", "shift()", "remove()", "slice()"],
+    correctAnswer: 0,
+  },
+  {
     question: "Qual tag é usada para criar links?",
     options: ["<link>", "<a>", "<href>", "<url>"],
     correctAnswer: 1,
@@ -86,6 +91,18 @@ function showQuestion(){
     optionsElements.appendChild(button);
 
   });
+  updateProgress();
+}
+
+function updateProgress() {
+  const totalQuestions = shuffledQuestions.length;
+  const progressText = document.getElementById("text-progress");
+  const progressBarLine = document.getElementById("bar-line");
+
+  progressText.textContent = `${questionIndex + 1}/${totalQuestions}`;
+
+  const progressPercentage = ((questionIndex + 1) / totalQuestions) * 100;
+  progressBarLine.style.width = `${progressPercentage}%`;
 }
 
 function handleAnswer(selectedOption) {
@@ -113,4 +130,5 @@ function handleAnswer(selectedOption) {
     buttons[selectedOption].classList.add("wrong");
     setTimeout(() => showGameOver(), 1500);
   }
+  updateProgress();
 }
