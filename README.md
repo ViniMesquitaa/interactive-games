@@ -86,8 +86,6 @@ Criar um quiz interativo com perguntas que mudam dinamicamente, fornecendo feedb
 │   ├── index.html        # Estrutura principal da aplicação
 │   ├── style.css         # Estilos do quiz
 │   ├── script.js         # Lógica e interatividade
-│   └── mock
-│       └── lotr.json     # Banco de dados de perguntas e respostas sobre o Hobbit e Senhor dos Anéis
 ├── .editorconfig         # Configuração de estilo de código
 ├── README.md             # Documentação do projeto
 ```
@@ -104,7 +102,6 @@ Criar um quiz interativo com perguntas que mudam dinamicamente, fornecendo feedb
 
 - Adicionar um cronômetro para respostas.
 - Implementar níveis de dificuldade.
-- Permitir reiniciar o quiz após o término.
 
 <!-- Shields Configuration -->
 
