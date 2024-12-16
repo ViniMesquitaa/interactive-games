@@ -132,3 +132,16 @@ function handleAnswer(selectedOption) {
   }
   updateProgress();
 }
+
+const gameOverScreen = document.getElementById("game-over-screen");
+
+function showGameOver() {
+  gameOverScreen.classList.remove("hidden");
+  questionScreen.classList.add("hidden");
+  finalScore.textContent = score;
+}
+
+function comeBackButtonAndHidenTheQuestionScreen() {
+  startScreen.classList.remove("hidden");
+  gameOverScreen.classList.add("hidden");
+} 
