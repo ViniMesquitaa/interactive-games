@@ -108,9 +108,16 @@ function updateProgress() {
 function handleAnswer(selectedOption) {
   const question = shuffledQuestions[questionIndex];
   const buttons = optionsElements.querySelectorAll("button");
+
+  optionsElements.classList.add("no-hover");
+
   buttons.forEach((button, index) => {
     if (index === question.correctAnswer) {
       button.classList.add("correct");
+    }
+
+    if (index === selectedOption) {
+      button.classList.add("wrong");
     }
   });
 
@@ -119,6 +126,7 @@ function handleAnswer(selectedOption) {
     scoreElement.textContent = score;
     setTimeout(() => {
       questionIndex++;
+      optionsElements.classList.remove("no-hover");
       if (questionIndex < shuffledQuestions.length) {
         showQuestion();
       } else {
@@ -127,8 +135,10 @@ function handleAnswer(selectedOption) {
       }
     }, 1500);
   } else {
-    buttons[selectedOption].classList.add("wrong");
-    setTimeout(() => showGameOver(), 1500);
+    setTimeout(() => {
+      // showGameOver()
+      location.reload();
+    }, 1500);
   }
   updateProgress();
 }
