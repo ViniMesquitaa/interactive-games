@@ -77,7 +77,7 @@ function startGameOnClickAndHidenTheStartScreen() {
   showQuestion();
 }
 
-function showQuestion(){
+function showQuestion() {
   const question = shuffledQuestions[questionIndex];
   questionElement.textContent = question.question;
   optionsElements.innerHTML = "";
@@ -135,10 +135,7 @@ function handleAnswer(selectedOption) {
       }
     }, 1500);
   } else {
-    setTimeout(() => {
-      // showGameOver()
-      location.reload();
-    }, 1500);
+    setTimeout(() => showGameOver(), 1500);
   }
   updateProgress();
 }
@@ -154,4 +151,5 @@ function showGameOver() {
 function comeBackButtonAndHidenTheQuestionScreen() {
   startScreen.classList.remove("hidden");
   gameOverScreen.classList.add("hidden");
-} 
+  optionsElements.classList.remove("no-hover");
+}
