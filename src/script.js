@@ -114,9 +114,7 @@ function handleAnswer(selectedOption) {
   buttons.forEach((button, index) => {
     if (index === question.correctAnswer) {
       button.classList.add("correct");
-    }
-
-    if (index === selectedOption) {
+    } else if (index === selectedOption) {
       button.classList.add("wrong");
     }
   });
@@ -152,4 +150,5 @@ function comeBackButtonAndHidenTheQuestionScreen() {
   startScreen.classList.remove("hidden");
   gameOverScreen.classList.add("hidden");
   optionsElements.classList.remove("no-hover");
+  location.reload();
 }
