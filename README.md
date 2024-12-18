@@ -12,15 +12,18 @@
 
 ## 📚 Tabela de Conteúdo
 
-- [📖 Sobre](#-sobre)
-- [🎯 Objetivo](#-objetivo)
-- [📝 Descrição](#-descrição)
-- [⚙️ Funcionalidades](#️-funcionalidades)
-- [💡 Conceitos Envolvidos](#-conceitos-envolvidos)
-- [🚀 Como Usar](#-como-usar)
-- [📂 Estrutura do Projeto](#-estrutura-do-projeto)
-- [📌 Requisitos](#-requisitos)
-- [✨ Melhorias Futuras](#-melhorias-futuras)
+- [Quiz Interativo](#quiz-interativo)
+  - [](#)
+  - [📚 Tabela de Conteúdo](#-tabela-de-conteúdo)
+  - [📖 Sobre](#-sobre)
+  - [🎯 Objetivo](#-objetivo)
+  - [📝 Descrição](#-descrição)
+  - [⚙️ Funcionalidades](#️-funcionalidades)
+  - [💡 Conceitos Envolvidos](#-conceitos-envolvidos)
+  - [🚀 Como Usar](#-como-usar)
+  - [📂 Estrutura do Projeto](#-estrutura-do-projeto)
+  - [📌 Requisitos](#-requisitos)
+  - [✨ Melhorias Futuras](#-melhorias-futuras)
 
 <!-- About Section -->
 
@@ -82,7 +85,7 @@ Criar um quiz interativo com perguntas que mudam dinamicamente, fornecendo feedb
 ## 📂 Estrutura do Projeto
 
 ```plaintext
-├── src
+├── docs
 │   ├── index.html        # Estrutura principal da aplicação
 │   ├── style.css         # Estilos do quiz
 │   ├── script.js         # Lógica e interatividade
