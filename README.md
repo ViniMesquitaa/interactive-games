@@ -12,7 +12,6 @@
 ## 📚 Tabela de Conteúdo
 
 - [Quiz Interativo](#quiz-interativo)
-  - [](#)
   - [📚 Tabela de Conteúdo](#-tabela-de-conteúdo)
   - [📖 Sobre](#-sobre)
   - [🎯 Objetivo](#-objetivo)
