@@ -57,11 +57,13 @@ const questions = [
 ];
 
 const startScreen = document.getElementById("start-screen");
+const finalScore = document.getElementById("final-score");
 const scoreElement = document.getElementById("score");
 const comebackButton = document.getElementById("comeback-button");
 const questionScreen = document.getElementById("question-screen");
 const questionElement = document.getElementById("question");
 const optionsElements = document.getElementById("options");
+const gameOverScreen = document.getElementById("game-over-screen");
 
 let score = 0;
 let shuffledQuestions = [];
@@ -125,12 +127,7 @@ function handleAnswer(selectedOption) {
     setTimeout(() => {
       questionIndex++;
       optionsElements.classList.remove("no-hover");
-      if (questionIndex < shuffledQuestions.length) {
-        showQuestion();
-      } else {
-        alert(`Parabéns! Você acertou todas!`);
-        location.reload();
-      }
+      questionIndex < shuffledQuestions.length ? showQuestion() : showEndGame()
     }, 1500);
   } else {
     setTimeout(() => showGameOver(), 1500);
@@ -138,12 +135,15 @@ function handleAnswer(selectedOption) {
   updateProgress();
 }
 
-const gameOverScreen = document.getElementById("game-over-screen");
-
 function showGameOver() {
   gameOverScreen.classList.remove("hidden");
   questionScreen.classList.add("hidden");
   finalScore.textContent = score;
+}
+
+function showEndGame() {
+  alert(`Parabéns! Você acertou todas!`)
+  location.reload();
 }
 
 function comeBackButtonAndHidenTheQuestionScreen() {
