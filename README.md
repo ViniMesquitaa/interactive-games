@@ -83,8 +83,8 @@ Criar um quiz interativo com perguntas que mudam dinamicamente, fornecendo feedb
 ## 📂 Estrutura do Projeto
 
 ```plaintext
-├── docs
-│   ├── index.html        # Estrutura principal da aplicação
+├── index.html            # Estrutura principal da aplicação
+├── assets                # Diretório para armazenar arquivos estáticos
 │   ├── style.css         # Estilos do quiz
 │   ├── script.js         # Lógica e interatividade
 │   └── img-icon          # Diretório de imagem/icones
