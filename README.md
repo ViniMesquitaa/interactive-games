@@ -5,7 +5,6 @@
 [![HTML5][html-image]][html-url]
 [![CSS3][css-image]][css-url]
 [![JavaScript][js-image]][js-url]
-[![JSON][json-image]][json-url]
 ---
 
 <!-- Table of Contents -->
@@ -13,7 +12,6 @@
 ## 📚 Tabela de Conteúdo
 
 - [Quiz Interativo](#quiz-interativo)
-  - [](#)
   - [📚 Tabela de Conteúdo](#-tabela-de-conteúdo)
   - [📖 Sobre](#-sobre)
   - [🎯 Objetivo](#-objetivo)
@@ -89,8 +87,11 @@ Criar um quiz interativo com perguntas que mudam dinamicamente, fornecendo feedb
 │   ├── index.html        # Estrutura principal da aplicação
 │   ├── style.css         # Estilos do quiz
 │   ├── script.js         # Lógica e interatividade
+│   └── img-icon          # Diretório de imagem/icones
+│       └── imagem-logo.png
 ├── .editorconfig         # Configuração de estilo de código
 ├── README.md             # Documentação do projeto
+
 ```
 
 <!-- Requirements Section -->
@@ -116,6 +117,3 @@ Criar um quiz interativo com perguntas que mudam dinamicamente, fornecendo feedb
 
 [js-image]: https://img.shields.io/badge/JavaScript-ES6-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black
 [js-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
-
-[json-image]: https://img.shields.io/badge/JSON-Data-%2300B1AB.svg?style=for-the-badge&logo=json&logoColor=white
-[json-url]: https://www.json.org/
